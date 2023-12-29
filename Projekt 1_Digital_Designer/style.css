@@ -94,6 +94,7 @@ header h2 {
 
 .wrapper article {
   position: relative;
+  min-height: 45vh;
 }
 
 .wrapper article p {
@@ -104,7 +105,7 @@ header h2 {
   margin-bottom: 20px;
 }
 
-.darker article p:first-of-type:before {
+.dark article p:first-of-type:before {
   content: url(assets/img/Line\ 1.svg);
   display: inline-block;
 }
@@ -153,7 +154,7 @@ header h2 {
 
 .white {
   background: white no-repeat center;
-  background-size: cover;
+  background-size: contain;
   min-height: 100vh;
 }
 
@@ -197,7 +198,6 @@ header h2 {
 
 .rollr {
   background-image: url(assets/img/second_section.png);
-  background-size: contain;
   background-attachment: fixed;
 }
 
@@ -208,7 +208,6 @@ header h2 {
 
 .tretto {
   background-image: url(assets/img/forth_section.png);
-  background-size: contain;
   background-attachment: fixed;
 }
 
