@@ -1,0 +1,306 @@
+@font-face {
+  font-family: "Didact Gothic";
+  src: url(assets/fonts/Didact_gothic/DidactGothic-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Fjalla One";
+  src: url(assets/fonts/Fjalla_one/FjallaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url(assets/fonts/Work_sans/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  transition: all 0.3s ease;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 18vh 15vw;
+}
+
+header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+h1 span {
+  font-family: "Work Sans", "sanserif";
+  font-size: clamp(1.6rem, 2.2vw, 2.6rem);
+  padding-bottom: 60px;
+  line-height: normal;
+  letter-spacing: normal;
+  display: block;
+}
+
+h1 {
+  font-family: "Didact Gothic";
+  font-size: clamp(9rem, 11vw, 11rem);
+  line-height: 130%;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: -2px;
+  padding-bottom: 60px;
+  max-width: 700px;
+}
+
+header img {
+  margin-bottom: 118px;
+}
+
+header h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: clamp(15rem, 17vw, 17rem);
+  margin-bottom: 152px;
+}
+
+.dark {
+  background: black no-repeat center;
+  background-size: cover;
+  min-height: 90vh;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper article {
+  position: relative;
+}
+
+.wrapper article p {
+  color: #9e9e9e;
+  font-size: clamp(1.6rem, 2.2vw, 2.6rem);
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.darker article p:first-of-type:before {
+  content: url(assets/img/Line\ 1.svg);
+  display: inline-block;
+}
+
+.wrapper article h2 {
+  font-family: "Didact Gothic";
+  font-size: clamp(10.2rem, 12vw, 12.2rem);
+  color: white;
+  margin-bottom: 40px;
+}
+
+.wrapper article p:nth-of-type(2) {
+  margin-bottom: 80px;
+}
+
+.btn {
+  border: 2px solid #9e9e9e;
+  color: white;
+  padding: 16px 26px;
+  font-family: "Fjalla One";
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: white 2px solid;
+}
+
+.btn:hover ~ .number {
+  color: white;
+  opacity: 0.8;
+}
+
+.wrapper .number {
+  position: absolute;
+  bottom: -18vh;
+  right: -5vw;
+  font-family: "Fjalla One";
+  font-size: clamp(15rem, 21vw, 20rem);
+  color: #9e9e9e;
+  opacity: 0.2;
+  letter-spacing: -3.3px;
+}
+
+.white {
+  background: white no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.white article p {
+  color: #666666;
+}
+
+.white article p:first-of-type:before {
+  content: url(assets/img/line\ 2.svg);
+}
+
+.white article h2 {
+  color: black;
+}
+
+.white a {
+  border: 2px solid black;
+  color: black;
+}
+
+.white a:hover {
+  background-color: black;
+  color: white;
+  border: black 2px solid;
+}
+
+.btn:hover ~ .darker {
+  color: black;
+  opacity: 1;
+}
+
+.darker {
+  color: #666666;
+  opacity: 0.7;
+}
+
+.orbis {
+  background-image: url(assets/img/first-section.png);
+  background-attachment: fixed;
+}
+
+.rollr {
+  background-image: url(assets/img/second_section.png);
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.gallitos {
+  background-image: url(assets/img/third_section.jpeg);
+  background-attachment: fixed;
+}
+
+.tretto {
+  background-image: url(assets/img/forth_section.png);
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.last {
+  display: flex;
+  justify-content: right;
+  max-width: 1690px;
+}
+
+section:last-of-type {
+  background: black;
+  min-height: 95vh;
+  padding: 16vh 0 12vh 0;
+}
+
+section:last-of-type h2 {
+  color: white;
+  font-size: clamp(13rem, 20vw, 19rem);
+  font-family: "Work Sans";
+  text-align: center;
+  letter-spacing: -18px;
+  margin-bottom: 150px;
+}
+
+.last article {
+  max-width: 830px;
+  text-align: left;
+  margin: 0 4vw;
+}
+
+.last article p {
+  color: #666;
+  margin-bottom: 70px;
+  letter-spacing: 0.22px;
+  line-height: 40px;
+}
+
+.last article a {
+  color: white;
+  font-size: clamp(5rem, 6vw, 7rem);
+  font-family: "Work Sans";
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  letter-spacing: -3.6px;
+}
+
+.last article a:hover {
+  border-bottom: 3px solid white;
+}
+
+footer {
+  margin: 22vh 5vw 12vh 5vw;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+footer li {
+  list-style: none;
+  margin-bottom: 150px;
+}
+
+footer li a {
+  text-decoration: none;
+  font-family: "Didact Gothic";
+  font-size: clamp(15rem, 17vw, 17rem);
+  color: black;
+  border-bottom: 8px solid transparent;
+}
+
+footer li a:hover {
+  border-bottom: 8px solid black;
+}
+
+footer img {
+  transform: scale(1);
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
